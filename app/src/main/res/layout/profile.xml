@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="140dp"
+            android:layout_height="114dp"
+            android:id="@+id/homeIcon"
+            android:src="@drawable/home"
+            android:scaleType="centerInside"
+            android:layout_marginBottom="20dp"
+            android:background="#00ffffff"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="135dp"
+            android:layout_height="51dp"
+            android:id="@+id/favorite"
+            android:src="@drawable/favorite"
+            android:scaleType="centerInside"
+            android:background="#00ffffff"
+            android:layout_marginBottom="10dp" />
+
+        <ImageButton
+            android:layout_width="132dp"
+            android:layout_height="51dp"
+            android:id="@+id/setting"
+            android:src="@drawable/setting"
+            android:scaleType="centerInside"
+            android:background="#00ffffff"
+            android:layout_marginBottom="10dp" />
+
+        <ImageButton
+            android:layout_width="136dp"
+            android:layout_height="45dp"
+            android:id="@+id/history"
+            android:src="@drawable/history"
+            android:scaleType="centerInside"
+            android:background="#00ffffff"
+            android:layout_marginBottom="10dp" />
+
+        <ImageButton
+            android:layout_width="135dp"
+            android:layout_height="45dp"
+            android:id="@+id/aboutUs"
+            android:src="@drawable/aboutus"
+            android:scaleType="centerInside"
+            android:background="#00ffffff" />
+    </LinearLayout>
+    <include
+        android:id="@+id/include_first"
+        android:visibility="visible"
+        layout="@layout/first"/>
+    <include
+        android:id="@+id/include_favorite"
+        android:visibility="visible"
+        layout="@layout/favorite"/>
+    <include
+        android:id="@+id/include_setting"
+        android:visibility="visible"
+        layout="@layout/setting"/>
+    <include
+        android:id="@+id/include_history"
+        android:visibility="visible"
+        layout="@layout/history"/>
+    <include
+        android:id="@+id/include_aboutUs"
+        android:visibility="visible"
+        layout="@layout/aboutus"/>
+</LinearLayout>
