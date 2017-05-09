@@ -1,5 +1,6 @@
 package com.example.homeworktest;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -48,7 +49,8 @@ public class profileActivity extends AppCompatActivity {
         favoriteListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //intent to parking information
+                Intent intent=new Intent();
+                intent.setClass(profileActivity.this,ParkingDetail.class);
             }
         });
         ArrayList<String> historyList=new ArrayList<String>();
@@ -59,7 +61,8 @@ public class profileActivity extends AppCompatActivity {
         historyListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //intent to parking information
+                Intent intent=new Intent();
+                intent.setClass(profileActivity.this,ParkingDetail.class);
             }
         });
         if(settingPreferences.getInt("SOUND_PREFERENCES",1)==1)
