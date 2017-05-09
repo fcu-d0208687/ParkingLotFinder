@@ -51,6 +51,7 @@ public class profileActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent();
                 intent.setClass(profileActivity.this,ParkingDetail.class);
+                startActivity(intent);
             }
         });
         ArrayList<String> historyList=new ArrayList<String>();
@@ -63,6 +64,7 @@ public class profileActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent=new Intent();
                 intent.setClass(profileActivity.this,ParkingDetail.class);
+                startActivity(intent);
             }
         });
         if(settingPreferences.getInt("SOUND_PREFERENCES",1)==1)
@@ -76,7 +78,9 @@ public class profileActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //intent to home page
+                Intent intent=new Intent();
+                intent.setClass(profileActivity.this,MainActivity.class);
+                startActivity(intent);
             }
         });
         aboutUs.setOnClickListener(new View.OnClickListener() {

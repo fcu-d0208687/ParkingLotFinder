@@ -140,6 +140,12 @@
                 android:id="@+id/ratingBar2" />
         </LinearLayout>
 
+        <Button
+            android:id="@+id/commentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="留言" />
+
     </LinearLayout>
 
 </RelativeLayout>
